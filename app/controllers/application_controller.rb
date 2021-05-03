@@ -23,7 +23,6 @@ class ApplicationController < Sinatra::Base
 	      :password => params[:password]
 	      )
 	      
-	  binding.pry  
 	  if username != "" && user.save 
 	    redirect "/login"
 	  else
