@@ -23,6 +23,7 @@ class ApplicationController < Sinatra::Base
 	      :password => params[:password]
 	      )
 	      
+	  binding.pry  
 	  if user.save
 	    redirect "/login"
 	  else
