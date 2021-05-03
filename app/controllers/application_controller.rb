@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
 	      )
 	      
 	  binding.pry  
-	  if user.save
+	  if user.save && username
 	    redirect "/login"
 	  else
 	    redirect "/failure"
